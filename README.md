@@ -41,7 +41,7 @@ This will run the app in the development mode. Open http://localhost:3000 1  to 
 github.com
 github.com
 
-Usage
+# Usage
 Enter a word in the input field.
 The application will automatically fetch and display the definition (if found).
 If no definition is found, a "No result found" message will be displayed.
