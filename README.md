@@ -1,12 +1,53 @@
-# React + Vite
+# Dictionary App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple dictionary application built using React that allows users to search for the definition of English words. It fetches data from the Free Dictionary API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Word Search:** Enter any English word to find its definition.
+- **Definition Display:** Shows the searched word and its first available definition.
+- **Error Handling:** Displays "No result found" if the word is not in the dictionary.
+- **Clean and Responsive UI:** Utilizes Tailwind CSS for styling, providing a dark theme and a centered layout.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React:** A JavaScript library for building user interfaces.
+- **Axios:** A promise-based HTTP client for making API requests.
+- **Tailwind CSS:** A utility-first CSS framework for rapid styling.
+- **Free Dictionary API:** A free API used to fetch word definitions.
+
+## Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd <repository-name>
+Install dependencies:
+
+Bash
+
+npm install
+# or
+yarn install
+Start the development server:
+
+Bash
+
+npm start
+# or
+yarn start
+This will run the app in the development mode. Open http://localhost:3000 1  to view it in your browser.   
+1.
+github.com
+github.com
+
+Usage
+Enter a word in the input field.
+The application will automatically fetch and display the definition (if found).
+If no definition is found, a "No result found" message will be displayed.
+API Endpoint
+The application uses the following API endpoint:
+
+https://api.dictionaryapi.dev/api/v2/entries/en/{word}
+
+where {word} is the word being searched.
