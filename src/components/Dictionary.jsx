@@ -14,6 +14,7 @@ const Dictionary = () => {
         }
     };
 
+    
     useEffect(() => {
         if (searchWord.trim().length > 0) {
             fetchData(searchWord);
